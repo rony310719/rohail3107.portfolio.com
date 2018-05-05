@@ -1,0 +1,231 @@
+
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rohail Portfolio</title>
+     <link rel="shortcut icon" type="image/png" href="https://www.r-project.org/logo/Rlogo.png">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styling.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body data-spy="scroll" data-target="#mynavBar">
+     <!--Add video to the body element-->
+      <video autoplay loop muted id="bgvideo">
+          <source src="images/nature%20video.mp4" type="video/mp4">
+      </video>
+      
+      <!--Create navigation bar with scrollspy-->
+      <nav role="navigation" class="navbar navbar-custom navbar-fixed-top" id="mynavBar">
+        
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand">Rohail Portfolio</a>
+                  <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
+                      <span class="sr-only">Toggle navigation</span>      
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="navbar-collapse collapse" id="navbarCollapse">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="#home">About me</a></li>
+                      <li><a href="#about">Skills</a></li>
+                      <li><a href="#promise">Projects</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
+      <!--Create the home section with title, goal and joins us button-->
+      <div class="jumbotron" id="home">
+          <div class="container">
+              <h1>Welcome To My Porfolio</h1>
+              <h2>My Name is Rohail Agneshius, I am a Web Developer ♥ I've always been drawn to the overlap between design and development. My skills are broad from UX to Design, Front-End to Back-End Development</h2>
+             
+               <p><a class="btn" href="resume.pdf">My Resume</a></p>
+          </div>
+      </div>
+      
+      <!--Create about section showing course details using grid system-->
+      <div id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="images/quality.png" class="aboutImage">
+                      <h2>Skills</h2>
+                      <p>Web Design, Mockups, Wireframe, FrontEnd, BackEnd, Database, Debugging.</p>   
+                  </div>
+                  <div class="col-md-4">
+                      <img src="images/tools.png" class="aboutImage">
+                      <h2>Client-Side</h2>
+                      <p> HTML5, CSS3, JavaScript, Angular.JS, JQuery, BootStrap, Wordpress</p>
+                      
+                  </div>
+                  <div class="col-md-4">
+                      <img src="images/help.png" class="aboutImage">
+                      <h2>Server-Side</h2>
+                      <p>Node.JS, Express, MongoDB, API's, PHP, Java, MySQL.</p>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!--Create Carousel-->
+      <div id="promise" class="container-fluid">
+          <div class="carousel slide" id="myCarousel" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active">
+                  </li>
+                  <li data-target="#myCarousel" data-slide-to="1">
+                  </li>
+                  <li data-target="#myCarousel" data-slide-to="2">
+                  </li>
+                  <li data-target="#myCarousel" data-slide-to="3">
+                  </li>
+                  <li data-target="#myCarousel" data-slide-to="4">
+                  </li>
+                  <li data-target="#myCarousel" data-slide-to="5">
+                  </li>
+                  <li data-target="#myCarousel" data-slide-to="6">
+                  </li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <img src="images/lecture.png">
+                      <div class="carousel-caption">
+                          <h2>Full Stack Personal Notes APP!!</h2><br>
+                           <button style="text-align: center;"><a class="btn" href="http://www.rohailproject.thecompletewebhosting.com/">LIVE</a></button>
+                      </div>
+                  </div>
+                <div class="item">
+                  <img src="images/cal.png">
+                   <div class="carousel-caption">
+                    <h2>Expense Calculator App </h2><br>
+                     <button style="text-align: center;"><a class="btn" href="http://moneycalrohail-com.stackstaging.com/">LIVE</a></button>
+                    </div>
+                  </div>
+                <div class="item">
+                  <img src="images/1.png">
+                   <div class="carousel-caption">
+                    <h2>SaSS website</h2><br>
+                     <button style="text-align: center;"><a class="btn" href="http://beyondstars-com.stackstaging.com/">LIVE</a></button>
+                    </div>
+                  </div>
+               
+                   <div class="item">
+                      <img src="images/finance.jpg">
+                      <div class="carousel-caption">
+                          <h2>Client Website.</h2><br>
+                           <button style="text-align: center;"><a class="btn" href="http://www.cornerstonefinanceaustralia.com.au/">LIVE</a></button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/massage.jpg">
+                      <div class="carousel-caption">
+                          <h2>Client Website 2.</h2>
+<br>
+                           <button style="text-align: center;"><a class="btn" href=" http://www.acupaedic.com/">LIVE</a></button>
+
+
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/smoke.jpg">
+                      <div class="carousel-caption">
+                          <h2>Client Website 3.</h2>
+<br>
+                           <button style="text-align: center;"><a class="btn" href=" http://www.smokealarmsaustralia.com.au/">LIVE</a></button>
+
+
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/gym.jpg">
+                      <div class="carousel-caption">
+                          <h2>Client Website 4.</h2>
+<br>
+                           <button style="text-align: center;"><a class="btn" href="http://lionheartboxing.com.au/">LIVE</a></button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/puzzle.jpg">
+                      <div class="carousel-caption">
+                          <h2>Beautiful Startup Page</h2>
+                          <br>
+                           <button style="text-align: center;"><a class="btn" href="http://www.rohailproject.thecompletewebhosting.com/">LIVE</a></button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/start.jpg">
+                      <div class="carousel-caption">
+                          <h2>Logging Book</h2>
+                          <br>
+                           <button style="text-align: center;"><a class="btn" href="http://rohailpersonalbook-com.stackstaging.com/">LIVE</a></button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/projects.jpg">
+                      <div class="carousel-caption">
+                          <h2>Weather App</h2>
+                          <br>
+                           <button style="text-align: center;"><a class="btn" href="https://rohailportfolio.000webhostapp.com/weather.php">LIVE</a></button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/money.jpg">
+                      <div class="carousel-caption">
+                          <h2>Client Management App.</h2>
+                          <br>
+                           <button style="text-align: center;"><a class="btn" href="http://agneshiusproject-com.stackstaging.com/">LIVE</a></button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/skills.jpg">
+                      <div class="carousel-caption">
+                          <h2>Full-Stack Time Management.</h2>
+                          <br>
+                           <button style="text-align: center;"><a class="btn" href="http://it3.space/tilde-time/index.php">LIVE</a></button>
+                      </div>
+                  </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+              
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Previous</span>
+              
+              </a>
+          </div>
+      </div>
+      <!--Add a footer for our website-->
+      <div class="footer">
+          <div class="container">
+             <a href="https://www.linkedin.com/in/rohail-agneshius-509a7675/"><p align="center">&copy;Rohail Agneshius.<br></a>khan.rohail@rocketmail.com</p>
+          </div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+      <script>
+          $(function(){
+                $('.carousel').carousel({
+                    interval: 10000
+                }); 
+          });
+      </script>
+  </body>
+</html>
