@@ -1,0 +1,28 @@
+name: AutoSync
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md' # Example: Ignore changes to README.md to prevent triggering unnecessary syncs
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Sync repo to repo
+        uses: Jooho/sync-upstream-repo@1.0.0
+        with:
+          upstream_repo: https://github.com/rohail3107/rohail3107.portfolio.com
+          upstream_branch: master
+          downstream_repo: https://github.com/rony310719/rohail3107.portfolio.com
+          downstream_branch: master 
+          token: ${{ secrets.PAT2_TOKEN }}
+          spawn_logs: sync-upstream-repo
